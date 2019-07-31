@@ -1,15 +1,21 @@
 import React, {Component} from 'react';
 import Header from "../header/header";
 import PersonDetails from "../person-details/person-details";
-const App =()=> {
+import RandomPlanet from "../random-planet/random-planet";
+import ItemList from "../item-list/item-list";
+
+const App = () => {
     return (
         <div>
             <Header/>
-            <div className="row mb2">
-                <div className="col-md-6"></div>
-            </div>
-            <div className="col-md-6">
-                <PersonDetails/>
+            <RandomPlanet/>
+            <div className="row mb">
+                <div className="col-md-6">
+                    <ItemList/>
+                </div>
+                <div className="col-md-6">
+                    <PersonDetails/>
+                </div>
             </div>
         </div>
     )
