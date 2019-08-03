@@ -1,0 +1,49 @@
+@keyframes lds-blocks {
+    0% {
+        background: #9df871;
+    }
+    12.5% {
+        background: #9df871;
+    }
+    12.625% {
+        background: #51CACC;
+    }
+    100% {
+        background: #51CACC;
+    }
+}
+
+@-webkit-keyframes lds-blocks {
+    0% {
+        background: #9df871;
+    }
+    12.5% {
+        background: #9df871;
+    }
+    12.625% {
+        background: #51CACC;
+    }
+    100% {
+        background: #51CACC;
+    }
+}
+
+.lds-blocks {
+    position: relative;
+}
+
+.lds-blocks div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #51CACC;
+    -webkit-animation: lds-blocks 1s linear infinite;
+    animation: lds-blocks 1s linear infinite;
+}
+
+.lds-blocks {
+    width: 62px !important;
+    height: 62px !important;
+    -webkit-transform: translate(-31px, -31px) scale(0.31) translate(31px, 31px);
+    transform: translate(-31px, -31px) scale(0.31) translate(31px, 31px);
+}
